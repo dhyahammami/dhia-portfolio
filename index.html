@@ -149,6 +149,17 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
 .nxt{display:block;padding:46px;border-radius:28px;background:var(--ink);color:#fff;text-decoration:none;--mut:#a8b5d0;transition:transform .5s var(--e),box-shadow .5s}.nxt:hover{transform:translateY(-5px);box-shadow:0 26px 60px rgba(10,26,60,.25)}
 .nxt small{color:var(--mut)}.nxt b{display:block;font-size:clamp(2rem,5vw,3.8rem);letter-spacing:-.045em;line-height:1;margin:12px 0}.nxt span{color:var(--mut)}
 @media(max-width:900px){.dl{grid-template-columns:1fr}.rail{display:none}.mg{grid-template-columns:1fr}.ly{grid-template-columns:1fr;gap:6px}.dh{padding-top:110px;border-radius:0 0 28px 28px}}
+
+/* ---- v7: screenshot gallery + lightbox ---- */
+.gt{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.gt button{border:1px solid var(--line);background:var(--w);color:var(--mut);font:inherit;font-size:.9rem;padding:8px 18px;border-radius:99px;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.gt button:hover{color:var(--ink);border-color:var(--ink)}.gt button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.fm[data-i]{cursor:zoom-in}.fm[data-i] img{transition:transform .7s var(--e)}.fm[data-i]:hover img{transform:scale(1.02)}.fm[data-i]:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.sw{animation:fu .5s both}
+#lb{position:fixed;inset:0;z-index:100;background:rgba(5,12,30,.93);display:grid;grid-template-columns:64px 1fr 64px;align-items:center;padding:24px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}#lb[hidden]{display:none}
+#lb figure{margin:0;display:grid;gap:14px;justify-items:center;min-width:0}#lb img{max-width:100%;max-height:82vh;width:auto;height:auto;border-radius:10px;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.5)}#lb figcaption{color:#c5d0e6;font-size:.95rem;text-align:center}
+#lb button{background:rgba(255,255,255,.1);border:0;color:#fff;font-size:2rem;line-height:1;width:48px;height:48px;border-radius:50%;cursor:pointer;transition:background .2s}#lb button:hover{background:var(--acc)}.lbx{position:absolute;top:18px;right:18px}
+@media(max-width:700px){#lb{grid-template-columns:1fr;padding:12px}.lbp,.lbn{position:absolute;bottom:16px}.lbp{left:16px}.lbn{right:16px}}
 </style>
 </head>
 <body>
@@ -236,7 +247,7 @@ const SKILLS=[
 
 /* Status kinds: live | wip.  Add a project by copying one block. */
 const P=[
-{id:"stockmaster",title:"StockMaster",sub:"Inventory & production management ERP",status:"Live, in production",kind:"live",cat:"Enterprise ERP",conf:"Internal tool. Only anonymized or mock screens will be shown.",
+{id:"stockmaster",media:[{"src":"media/stockmaster/01-dashboard.webp","w":1521,"h":724,"cap":"Dashboard: stock KPIs, 30-day movements and requests by status","g":"Dashboard"},{"src":"media/stockmaster/02-dashboard-requests.webp","w":1508,"h":738,"cap":"Requests over six months, catalogue by category, top requested products and stock alerts","g":"Dashboard"},{"src":"media/stockmaster/03-catalogue.webp","w":1522,"h":686,"cap":"Product catalogue with automatic codes, search, categories and stock status","g":"Stock"},{"src":"media/stockmaster/04-movements.webp","w":1505,"h":701,"cap":"Movement history with date range, period totals and CSV export","g":"Stock"},{"src":"media/stockmaster/05-requests-list.webp","w":1513,"h":682,"cap":"Internal requests in progress, with their workflow status","g":"Requests"},{"src":"media/stockmaster/06-request-detail.webp","w":1510,"h":726,"cap":"Request detail: held quantities, release or refuse, new estimated date and history","g":"Requests"},{"src":"media/stockmaster/07-product-history.webp","w":1506,"h":729,"cap":"Usage history per product by month, quarter, semester and year","g":"Requests"},{"src":"media/stockmaster/08-plan-create.webp","w":1510,"h":666,"cap":"Weekly plan builder with automatic material needs and predicted shortages","g":"Production"},{"src":"media/stockmaster/09-plan-list.webp","w":1505,"h":678,"cap":"Published production plans with required materials and stock status","g":"Production"},{"src":"media/stockmaster/10-quick-calc.webp","w":1514,"h":729,"cap":"Quick calculation: what-if simulation without saving a plan","g":"Production"},{"src":"media/stockmaster/11-client-card-form.webp","w":1518,"h":656,"cap":"Client card form with bill of materials and exact ratios","g":"Production"},{"src":"media/stockmaster/12-client-cards.webp","w":1514,"h":677,"cap":"Client cards list with expandable bill of materials","g":"Production"},{"src":"media/stockmaster/13-purchase-new.webp","w":1502,"h":714,"cap":"New purchase request with budget, justification and requested items","g":"Purchasing"},{"src":"media/stockmaster/14-purchase-list.webp","w":1514,"h":706,"cap":"Purchase requests awaiting management decision, with timeline and actions","g":"Purchasing"},{"src":"media/stockmaster/15-suppliers.webp","w":1514,"h":674,"cap":"Supplier records","g":"Purchasing"},{"src":"media/stockmaster/16-suppliers-list.webp","w":1509,"h":684,"cap":"Approved supplier list with scores and classes A to D","g":"Purchasing"},{"src":"media/stockmaster/17-supplier-evaluation.webp","w":1506,"h":697,"cap":"Supplier evaluation sheet with weighted criteria","g":"Purchasing"},{"src":"media/stockmaster/18-report-product.webp","w":1496,"h":714,"cap":"Per-product analysis: stock, rotation speed and estimated autonomy","g":"Reports & access"},{"src":"media/stockmaster/19-users.webp","w":1500,"h":696,"cap":"User management with roles and account status (demo accounts)","g":"Reports & access"}],title:"StockMaster",sub:"Inventory & production management ERP",status:"Live, in production",kind:"live",cat:"Enterprise ERP",conf:"Internal tool. Screenshots are cropped and personal names are masked.",
  short:"Full-stack ERP for stock, internal requests, purchasing and production planning, deployed on a production VPS.",
  chips:["React 19","Node.js","PostgreSQL","Prisma"],
  over:["StockMaster replaces fragmented manual stock operations with one multi-user application that connects warehouse activity, purchasing and production needs in an electronics manufacturing environment.","It has ten user roles with strict visibility rules and works on phones and desktops."],
@@ -299,8 +310,7 @@ function detail(p){
 const i=P.indexOf(p),nx=P[(i+1)%P.length];let k=0;
 const ttl=p.title.split(" ").map(w=>`<span class="wd">${[...w].map(ch=>`<span class="c" style="--i:${k++}">${ch}</span>`).join("")}</span>`).join(" ");
 const secs=[["d-ov","Overview"],["d-do","My role"],["d-fn","Functionality"],["d-ar","Architecture"],...(p.ch.length?[["d-ch","Challenges"]]:[]),["d-md","Screens & workflow"],["d-cf","Confidentiality"]];
-const med=p.media&&p.media.length?p.media:p.mods.slice(0,3).map(m=>({ph:m[0]}));
-const fr=(m,j)=>`<figure class="fm ${j===0?"big":""}"><div class="fbar"><i></i><i></i><i></i></div>${m.ph?`<div class="fph">${m.ph}<small>Screenshot to add</small></div>`:m.type==="video"?`<video src="${m.src}" ${m.poster?`poster="${m.poster}"`:""} controls muted loop playsinline preload="metadata"></video>`:`<img src="${m.src}" alt="${m.caption||p.title}" loading="lazy">`}${m.caption?`<figcaption>${m.caption}</figcaption>`:""}</figure>`;
+const med=p.media&&p.media.length?p.media:p.mods.slice(0,3).map(m=>({ph:m[0]}));const gs=[...new Set(med.map(m=>m.g).filter(Boolean))];CUR=p;CL=gs.length?med.filter(m=>m.g===gs[0]):med;
 return `<div class="dh"><div class="wrap"><a class="back" href="#projects">Back to all projects</a><div><span class="badge">${dot(p.kind)}${p.status}</span></div>
 <h1 class="dt" aria-label="${p.title}">${ttl}</h1><p class="dsub">${p.sub}</p>
 <div class="dg"><div><small>My role</small><b>${p.role}</b></div><div><small>Category</small><b>${p.cat}</b></div><div><small>Main stack</small><div class="cps">${p.chips.map(c=>`<span class="cp">${c}</span>`).join("")}</div></div></div></div></div>
@@ -310,13 +320,13 @@ return `<div class="dh"><div class="wrap"><a class="back" href="#projects">Back 
 <section class="db" id="d-fn"><h2 class="rv">Main functionality</h2><div class="mg2">${p.mods.map(m=>`<div class="mc rv"><h3>${m[0]}</h3>${ul(m[1])}</div>`).join("")}</div></section>
 <section class="db rv" id="d-ar"><h2>Technical architecture</h2>${p.stack.map(r=>`<div class="ly"><b>${r[0]}</b><div class="chips">${r[1].split(", ").map(t=>`<span>${t}</span>`).join("")}</div></div>`).join("")}</section>
 ${p.ch.length?`<section class="db" id="d-ch"><h2 class="rv">Challenges and solutions</h2><div class="chg">${p.ch.map(c=>`<div class="cc rv"><small>Challenge</small><h3>${c[0]}</h3><small>Solution</small><p>${c[1]}</p></div>`).join("")}</div></section>`:""}
-<section class="db" id="d-md"><h2 class="rv">Screens & workflow</h2><div class="mg rv">${med.map(fr).join("")}</div></section>
+<section class="db" id="d-md"><h2 class="rv">Screens & workflow</h2>${gs.length>1?`<div class="gt rv">${gs.map((g,i)=>`<button data-g="${g}" class="${i?"":"on"}">${g}</button>`).join("")}</div>`:""}<div class="mg rv" id="mg">${figs(CL)}</div></section>
 <section class="db rv" id="d-cf"><h2>Confidentiality</h2><p class="note">${p.conf}</p></section>
 <a class="nxt rv" href="#${nx.id}"><small>Next project</small><b>${nx.title}</b><span>${nx.sub}</span></a>
 <p style="margin:40px 0 0"><a class="btn p" href="#contact">Discuss a similar project</a></p></div></div>`}
 const base=document.title;
 function route(){const id=location.hash.slice(1),p=P.find(x=>x.id===id);$("#home").hidden=!!p;$("#detail").hidden=!p;
-if(p){$("#detail").innerHTML=detail(p);initD();document.title=p.title+" | Dhia Hammami";scrollTo(0,0);window.lenis&&lenis.scrollTo(0,{immediate:true})}else{document.title=base;const e=id&&document.getElementById(id);if(e)e.scrollIntoView()}}
+if(p){$("#detail").innerHTML=detail(p);initD();initM();document.title=p.title+" | Dhia Hammami";scrollTo(0,0);window.lenis&&lenis.scrollTo(0,{immediate:true})}else{document.title=base;const e=id&&document.getElementById(id);if(e)e.scrollIntoView()}}
 addEventListener("hashchange",route);route();
 /* motion */
 const bar=$("#bar"),pg=$("#pg"),tick=$("#tick"),tl=$("#tl");
@@ -358,6 +368,19 @@ const ro=new IntersectionObserver(e=>e.forEach(y=>{if(y.isIntersecting){y.target
 document.querySelectorAll("#detail .mc,#detail .cc").forEach((n,i)=>n.style.transitionDelay=(i%3)*90+"ms");rvs.forEach(n=>ro.observe(n));
 const so=new IntersectionObserver(e=>e.forEach(y=>{if(y.isIntersecting)b.forEach(x=>x.classList.toggle("on",x.dataset.s===y.target.id))}),{rootMargin:"-30% 0px -60% 0px"});
 document.querySelectorAll("#detail .db").forEach(n=>so.observe(n))}
+/* v7: gallery + lightbox */
+var CUR,CL,li=0;
+function figs(list){const odd=list.length%2;return list.map((m,j)=>`<figure class="fm ${odd&&j===0?"big":""}" ${m.src?`data-i="${j}" tabindex="0"`:""}><div class="fbar"><i></i><i></i><i></i></div>${m.ph?`<div class="fph">${m.ph}<small>Screenshot to add</small></div>`:`<img src="${m.src}" ${m.w?`width="${m.w}" height="${m.h}"`:""} alt="${m.cap||CUR.title}" loading="lazy">`}${m.cap?`<figcaption>${m.cap}</figcaption>`:""}</figure>`).join("")}
+const lb=document.createElement("div");lb.id="lb";lb.hidden=true;lb.setAttribute("role","dialog");lb.setAttribute("aria-label","Screenshot viewer");
+lb.innerHTML='<button class="lbx" aria-label="Close">×</button><button class="lbp" aria-label="Previous">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="lbn" aria-label="Next">›</button>';document.body.append(lb);
+function showLB(i){li=(i+CL.length)%CL.length;const m=CL[li],im=lb.querySelector("img");im.src=m.src;im.alt=m.cap||"";lb.querySelector("figcaption").textContent=(m.cap||"")+" ("+(li+1)+"/"+CL.length+")"}
+function openLB(i){showLB(i);lb.hidden=false;document.body.style.overflow="hidden";window.lenis&&lenis.stop();lb.querySelector(".lbx").focus()}
+function closeLB(){lb.hidden=true;document.body.style.overflow="";window.lenis&&lenis.start()}
+lb.onclick=e=>{if(e.target===lb||e.target.closest(".lbx"))closeLB();else if(e.target.closest(".lbp"))showLB(li-1);else if(e.target.closest(".lbn"))showLB(li+1)};
+addEventListener("keydown",e=>{if(lb.hidden)return;if(e.key==="Escape")closeLB();if(e.key==="ArrowLeft")showLB(li-1);if(e.key==="ArrowRight")showLB(li+1)});
+function initM(){const mg=$("#mg");if(!mg)return;const tabs=[...document.querySelectorAll("#detail .gt button")];
+tabs.forEach(b=>b.onclick=()=>{tabs.forEach(x=>x.classList.toggle("on",x===b));CL=CUR.media.filter(m=>m.g===b.dataset.g);mg.classList.remove("sw");void mg.offsetWidth;mg.innerHTML=figs(CL);mg.classList.add("sw")});
+const op=e=>{const f=e.target.closest("figure[data-i]");if(f)openLB(+f.dataset.i)};mg.onclick=op;mg.onkeydown=e=>{if(e.key==="Enter")op(e)}}
 </script>
 </body>
 </html>
