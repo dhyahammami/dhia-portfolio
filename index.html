@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dhia Hammami | Application Administrator & Full-Stack Developer</title>
+<meta name="description" content="Dhia Hammami is an Application Administrator & Developer at EMS Tunisie. Full-stack development, application administration and IT projects that turn operational needs into reliable software.">
+<meta property="og:title" content="Dhia Hammami | Application Administrator & Developer">
+<meta property="og:description" content="Enterprise software for stock, maintenance, quality and HR, built and deployed at EMS Tunisie.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a1a3c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1a3c'/%3E%3Ctext x='32' y='43' font-size='28' font-weight='700' text-anchor='middle' fill='white' font-family='Arial,sans-serif'%3EDH%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#f3f5f9;--w:#fff;--ink:#0a1a3c;--mut:#5b6780;--line:#d9dfea;--acc:#2f5bff;--ok:#12805a;--wip:#b06a00;--e:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.c,.rv{opacity:1!important;transform:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Inter","Helvetica Neue",Arial,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-weight:650;letter-spacing:-.035em;line-height:1.05;margin:0}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+header.bar{position:fixed;top:0;left:0;right:0;z-index:10;transition:background .3s,box-shadow .3s}
+header.bar.s{background:rgba(243,245,249,.88);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+header.bar .wrap{display:flex;justify-content:space-between;align-items:center;height:68px;gap:18px}
+.brand{font-weight:700;letter-spacing:-.02em;text-decoration:none}
+nav{display:flex;gap:22px;font-size:.92rem;overflow-x:auto}nav a{text-decoration:none;color:var(--mut);white-space:nowrap;transition:color .2s}nav a:hover{color:var(--ink)}
+#pg{position:fixed;top:0;left:0;right:0;height:3px;background:var(--acc);transform:scaleX(0);transform-origin:left;z-index:20}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px 0 44px;overflow:hidden}
+.role{display:flex;align-items:center;gap:10px;font-weight:600;margin:0 0 18px;color:var(--mut)}
+h1{font-size:clamp(4.2rem,16.5vw,13.5rem);line-height:.84;letter-spacing:-.065em;margin-left:-.04em}
+.ln{display:block;overflow:hidden;padding:.02em .04em .1em 0}
+.c{display:inline-block;animation:up 1.2s var(--e) both;animation-delay:calc(var(--i)*60ms + 120ms)}
+@keyframes up{from{transform:translateY(108%)}to{transform:none}}
+@keyframes fu{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hb{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;margin-top:38px;align-items:end;animation:fu 1s 1s both}
+.sub{font-size:1.2rem;color:var(--mut);max-width:50ch;margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-self:end}
+.btn{display:inline-block;padding:13px 22px;border-radius:99px;border:1.5px solid var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;transition:background .25s,color .25s,transform .25s,border-color .25s}
+.btn.p{background:var(--ink);color:#fff}.btn:hover{background:var(--acc);border-color:var(--acc);color:#fff;transform:translateY(-2px)}
+.tick{margin-top:48px;white-space:nowrap;font-size:clamp(2.6rem,7vw,5.6rem);font-weight:700;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.2px #b6c0d4;will-change:transform;user-select:none}
+section.s{padding:120px 0}
+h2{font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:20px}.lead{color:var(--mut);font-size:1.12rem;max-width:58ch;margin:0 0 48px}
+.about{display:grid;grid-template-columns:1fr 1.25fr;gap:64px}.about .stk{position:sticky;top:110px;align-self:start}
+.proc{list-style:none;margin:0;padding:0}.proc li{padding:26px 0;border-top:1px solid var(--line);opacity:.28;transition:opacity .5s,transform .5s var(--e);transform:translateX(0)}
+.proc li.on{opacity:1;transform:translateX(10px)}.proc b{display:block;font-size:clamp(1.5rem,3vw,2.2rem);letter-spacing:-.03em;font-weight:650}.proc span{color:var(--mut)}
+.tl{position:relative;padding-left:40px}.tl::before,.tl::after{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:var(--line)}
+.tl::after{background:var(--acc);transform-origin:top;transform:scaleY(var(--p,0))}
+.job{position:relative;display:grid;grid-template-columns:190px 1fr;gap:28px;padding:0 0 46px}
+.job::before{content:"";position:absolute;left:-41px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--acc)}
+.job .when{color:var(--mut);font-size:.93rem;padding-top:4px}.job h3{font-size:1.5rem}.job .org{color:var(--mut);margin:4px 0 12px}
+.job ul,.mods ul{margin:0;padding-left:1.1em}.job li,.mods li{margin:4px 0}
+.tag{display:inline-block;font-size:.76rem;font-weight:600;padding:2px 10px;border-radius:99px;border:1px solid var(--ok);color:var(--ok);margin-left:10px;vertical-align:middle;letter-spacing:0}.tag.past{border-color:var(--line);color:var(--mut)}
+.stack{position:relative}
+.pc{position:sticky;top:calc(88px + var(--i)*18px);min-height:60vh;display:grid;grid-template-columns:1.25fr 1fr;gap:36px;padding:44px;margin-bottom:36px;border-radius:26px;background:var(--w);border:1px solid var(--line);box-shadow:0 -14px 40px rgba(10,26,60,.05)}
+.pc.d{background:var(--ink);color:#fff;border-color:var(--ink);--mut:#a8b5d0;--line:#27406f}
+.pc h3{font-size:clamp(2.2rem,5vw,4rem);margin:16px 0 10px}.pc .l p{color:var(--mut);max-width:44ch;margin:0}.pc .sb{font-weight:600;margin:0 0 12px!important;color:inherit!important}
+.pc .r{display:flex;flex-direction:column;gap:18px;justify-content:space-between}.pc dl{margin:0}.pc dt{font-size:.82rem;color:var(--mut)}.pc dd{margin:0 0 12px;font-weight:550}
+.pc.d .btn{border-color:#fff;color:#fff}.pc.d .btn:hover{background:#fff;color:var(--ink)}.pc .btn{align-self:flex-start}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chips span{font-size:.8rem;padding:3px 11px;border-radius:99px;border:1px solid var(--line);color:var(--mut)}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600}.dot{width:9px;height:9px;border-radius:50%;background:var(--ok)}.dot.wip{background:var(--wip)}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px 36px}.sk h3{font-size:1.2rem;margin-bottom:12px;letter-spacing:-.02em}
+.sk .chips span{color:var(--ink);background:var(--w);transition:background .2s,color .2s,border-color .2s}.sk .chips span:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px}.two h3{font-size:1.3rem;margin-bottom:14px}.two ul{padding-left:1.1em;margin:0}.two li{margin:8px 0}
+.cta{background:var(--ink);color:#fff;border-radius:34px 34px 0 0;padding:120px 0 90px;--mut:#a8b5d0}
+.cta .lead{color:var(--mut)}.big{font-size:clamp(1.5rem,5.4vw,4.2rem);font-weight:650;letter-spacing:-.04em;text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 3px no-repeat;transition:background-size .5s var(--e);word-break:break-all}.big:hover{background-size:100% 3px}
+.cta .btn{border-color:#fff;color:#fff}.cta .btn.p{background:#fff;color:var(--ink)}.cta .btn:hover{background:var(--acc);border-color:var(--acc);color:#fff}
+footer{background:var(--ink);color:#8d9bb8;padding:0 0 30px;font-size:.88rem}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--e),transform .9s var(--e)}.rv.in{opacity:1;transform:none}
+/* detail */
+.back{display:inline-block;margin:110px 0 26px;color:var(--mut);text-decoration:none}.back:hover{color:var(--ink)}
+.dhead h1{font-size:clamp(2.6rem,8vw,6rem);line-height:.95;letter-spacing:-.05em;margin:14px 0}.meta{display:flex;flex-wrap:wrap;gap:6px 24px;color:var(--mut)}
+.blk{padding:40px 0;border-top:1px solid var(--line)}.blk h2{font-size:1.7rem;margin-bottom:16px}.blk p{max-width:70ch;margin:0 0 10px}
+.mods{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px 40px}.mods h3{font-size:1.05rem;margin-bottom:8px;letter-spacing:-.01em}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:12px 16px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}th{width:30%;font-weight:600}.scroll{overflow-x:auto}
+.ph{border:1.5px dashed var(--line);border-radius:16px;padding:34px;color:var(--mut);background:var(--w)}.note{border-left:3px solid var(--acc);padding:8px 18px;background:var(--w);max-width:70ch;border-radius:0 10px 10px 0}
+#detail:not([hidden]){animation:fu .6s both;padding-bottom:60px}
+@media(max-width:860px){.hb,.about,.two,.pc,.job{grid-template-columns:1fr}.btns{justify-self:start}.about .stk{position:static}.pc{position:static;padding:28px;min-height:0}section.s{padding:84px 0}.brand{display:none}.job{gap:6px}}
+
+/* ---- v4: navbar, hero, footer ---- */
+header.bar{top:14px;display:flex;justify-content:center;pointer-events:none;background:none!important;box-shadow:none!important;backdrop-filter:none!important;transition:transform .5s var(--e)}
+header.bar.hid{transform:translateY(-130%)}
+.nb{pointer-events:auto;display:flex;align-items:center;gap:8px;padding:6px;border-radius:99px;background:rgba(255,255,255,.78);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid var(--line);box-shadow:0 12px 34px rgba(10,26,60,.09);max-width:calc(100% - 20px)}
+.mono{width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.9rem;letter-spacing:-.02em;text-decoration:none;flex:none;transition:background .25s,transform .4s var(--e)}.mono:hover{background:var(--acc);transform:rotate(-8deg)}
+#nv{position:relative;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}#nv::-webkit-scrollbar{display:none}
+#nv a{position:relative;z-index:1;padding:10px 15px;border-radius:99px;color:var(--mut);white-space:nowrap;font-size:.92rem;font-weight:500;transition:color .25s}#nv a:hover,#nv a.on{color:var(--ink)}
+.ind{position:absolute;z-index:0;top:0;bottom:0;left:0;width:0;border-radius:99px;background:var(--bg);box-shadow:inset 0 0 0 1px var(--line);transition:transform .5s var(--e),width .5s var(--e),opacity .3s;opacity:0}
+.ncta{background:var(--ink);color:#fff;padding:11px 20px;border-radius:99px;text-decoration:none;font-weight:600;font-size:.9rem;white-space:nowrap;flex:none;transition:background .25s}.ncta:hover{background:var(--acc)}
+.hero{position:relative}
+.cyl{font-size:clamp(1.5rem,3.2vw,2.5rem);font-weight:600;letter-spacing:-.035em;line-height:1.15;margin:0 0 12px}
+.cy{display:inline-block;overflow:hidden;vertical-align:bottom;height:1.2em;color:var(--acc)}.cy span{display:inline-block;animation:cyin .7s var(--e) both}
+@keyframes cyin{from{transform:translateY(105%)}to{transform:none}}
+.sub{font-size:1.05rem!important;margin-bottom:20px!important}
+.pills{display:flex;flex-wrap:wrap;gap:8px}.pl{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:var(--w);text-decoration:none;font-size:.88rem;font-weight:550;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.pl:hover{background:var(--ink);color:#fff;border-color:var(--ink);transform:translateY(-2px)}
+.now{position:absolute;top:130px;right:max(28px,calc((100vw - 1180px)/2 + 28px));display:flex;flex-direction:column;gap:3px;padding:18px 22px;border-radius:20px;background:var(--w);border:1px solid var(--line);box-shadow:0 18px 44px rgba(10,26,60,.08);font-size:.9rem;color:var(--mut);max-width:270px;animation:fu 1s 1.3s both,fl 7s 2.3s ease-in-out infinite}
+.now b{color:var(--ink);font-size:1rem;letter-spacing:-.01em;line-height:1.3;margin:6px 0 2px}
+@keyframes fl{50%{transform:translateY(-7px)}}
+.ft{background:var(--ink);color:#fff;padding:0;overflow:hidden;--mut:#a8b5d0;border-top:1px solid #27406f}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1.2fr 1fr;gap:40px;padding:72px 0 48px}
+.fa b{font-size:1.5rem;letter-spacing:-.03em}.fa p{color:var(--mut);max-width:34ch;margin:12px 0 0}
+.fc h4{margin:0 0 16px;font-size:.9rem;color:var(--mut);font-weight:500}.fc a,.fc #fpr a{display:block;color:#fff;text-decoration:none;padding:4px 0;width:max-content;max-width:100%;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .4s var(--e)}.fc a:hover{background-size:100% 1px}
+.fb{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-top:1px solid #27406f;color:var(--mut);font-size:.88rem}
+.up{width:44px;height:44px;border-radius:50%;border:1.5px solid #3a5589;display:grid;place-items:center;color:#fff;transition:background .25s,transform .3s var(--e)}.up:hover{background:var(--acc);border-color:var(--acc);transform:translateY(-4px)}
+.wm{font-size:clamp(3.4rem,15.5vw,14rem);font-weight:700;letter-spacing:-.065em;line-height:.78;color:transparent;-webkit-text-stroke:1.2px #2c4577;white-space:nowrap;margin:18px 0 -.12em;user-select:none}
+.cta{border-radius:34px 34px 0 0}
+@media(max-width:900px){.now{display:none}.fg{grid-template-columns:1fr 1fr;gap:34px}.fa{grid-column:1/-1}}
+@media(max-width:640px){.ncta{display:none}header.bar{top:10px}}
+
+/* ---- v5: smooth scroll + motion borrowed from the reference ---- */
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+.glow{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(460px circle at var(--gx,50%) var(--gy,30%),rgba(47,91,255,.14),transparent 70%)}
+.cyl{min-height:2.4em}.cy{overflow:visible;height:auto}.cy span{animation:none}
+.cy::after{content:"";display:inline-block;width:3px;height:.95em;background:var(--acc);margin-left:4px;vertical-align:-.08em;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.now{animation:fu 1s 1.3s backwards;transition:transform .2s ease-out;will-change:transform}
+.sk .chips span{opacity:0;transform:translateY(10px)}
+.sk .rv.in .chips span{opacity:1;transform:none;transition:opacity .7s var(--e),transform .7s var(--e),background .2s,color .2s,border-color .2s;transition-delay:calc(var(--k)*45ms),calc(var(--k)*45ms),0s,0s,0s}
+@media(prefers-reduced-motion:reduce){.sk .chips span{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="glow" id="glow" aria-hidden="true"></div>
+<div id="pg"></div>
+<header class="bar" id="bar"><div class="nb">
+<a class="mono" href="#top" aria-label="Home">DH</a>
+<nav aria-label="Main" id="nv"><span class="ind" id="ind"></span><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a></nav>
+<a class="ncta" href="#contact">Contact</a></div></header>
+<main id="top">
+<div id="home">
+<section class="hero"><aside class="now" aria-label="Current position"><span class="badge"><span class="dot"></span>Currently</span><b>Application Administrator & Developer</b><span>EMS Tunisie, Manouba</span><span>Since Sep 2026</span></aside><div class="wrap">
+<p class="role"><span class="dot"></span>Application Administrator & Developer at EMS Tunisie</p>
+<h1 id="nm" aria-label="Dhia Hammami"><span class="ln">Dhia</span><span class="ln">Hammami</span></h1>
+<div class="hb"><div><p class="cyl">I build and run software for <span class="cy"><span id="cyw">stock management</span></span></p>
+<p class="sub">Business applications for an electronics manufacturer, from the database to the server.</p>
+<div class="pills" id="pills"></div></div>
+<div class="btns"><a class="btn p" href="#projects">View projects</a><a class="btn" id="cvLink" href="Dhia_Hammami_CV.pdf" download>Download CV</a><a class="btn" href="#contact">Contact me</a></div></div>
+</div>
+<div class="tick" id="tick" aria-hidden="true">Full-stack development · Application administration · IT projects · Digital transformation ·</div>
+</section>
+
+<section class="s" id="about"><div class="wrap about">
+<div class="stk"><h2 class="rv">How I work</h2><p class="lead rv">I hold a Bachelor’s degree in Computer Systems Engineering (IoT and Embedded Systems). I start with the people who use a process every day and finish with an application that is deployed, monitored and maintained.</p></div>
+<ol class="proc" id="proc"><li><b>Needs analysis</b><span>Meet the departments and capture what they actually do.</span></li><li><b>Specifications</b><span>Write down scope, roles and workflows so everyone agrees.</span></li><li><b>Design</b><span>Choose the architecture, data model and interface.</span></li><li><b>Development</b><span>Build the frontend and backend as one product.</span></li><li><b>Hosting</b><span>Deploy on a secured Linux server with HTTPS and backups.</span></li><li><b>User training</b><span>Teach each team to use the tool in its own workflow.</span></li><li><b>Follow-up & maintenance</b><span>Support users, fix issues and keep improving.</span></li></ol></div></section>
+
+<section class="s" id="experience" style="background:var(--w)"><div class="wrap">
+<h2 class="rv">Experience</h2><p class="lead rv">Two successive roles at EMS Tunisie, then earlier internships.</p>
+<div class="tl" id="tl"></div></div></section>
+
+<section class="s" id="projects"><div class="wrap">
+<h2 class="rv">Selected work</h2><p class="lead rv">Each system has a case study with its status and confidentiality level. Internal tools are shown without company data.</p>
+<div class="stack" id="stack"></div></div></section>
+
+<section class="s" id="skills" style="background:var(--w)"><div class="wrap">
+<h2 class="rv">Technical skills</h2><p class="lead rv">Technologies I have used in the projects above and can discuss in detail.</p>
+<div class="sk" id="sk"></div></div></section>
+
+<section class="s" id="education"><div class="wrap"><h2 class="rv">Education & certifications</h2>
+<div class="two" style="margin-top:36px">
+<div class="rv"><h3>Education</h3><ul><li><b>Bachelor’s Degree in Computer Systems Engineering</b><br>Higher Institute of Computer Science and Multimedia of Gabes, specialization IoT and Embedded Systems. Graduated 2024.</li></ul>
+<h3 style="margin-top:30px">Leadership</h3><ul><li>Organization Manager, Tunivisions University Club (2024)</li><li>Human Resources Manager, Microsoft Tech Club (2022 to 2024)</li></ul></div>
+<div class="rv"><h3>Certifications</h3><ul><li>Cybersecurity (2024)</li><li>ISTQB, Software Testing (2023)</li><li>Machine Learning (2023)</li><li>Organization & Project Management (2023)</li></ul><p style="color:var(--mut);font-size:.92rem">All awarded by the Higher Institute of Computer Science and Multimedia of Gabes.</p>
+<h3 style="margin-top:30px">Languages</h3><ul><li>English</li><li>French</li></ul></div></div></div></section>
+
+<section class="cta" id="contact"><div class="wrap">
+<h2 class="rv">Let’s talk about your next system.</h2>
+<p class="lead rv">Open to IT roles, international opportunities and freelance projects in custom software and digital transformation.</p>
+<p class="rv"><a class="big" id="mail" href="#">Email me</a></p>
+<div class="btns rv" style="margin-top:36px;justify-self:start"><a class="btn p" id="mail2" href="#">Write to me</a><a class="btn" id="cv2" href="Dhia_Hammami_CV.pdf" download>Download CV</a><a class="btn" id="li" href="#" hidden>LinkedIn</a><a class="btn" id="gh" href="#" hidden>GitHub</a></div>
+</div></section>
+</div>
+<div id="detail" hidden></div>
+</main>
+<footer class="ft"><div class="wrap">
+<div class="fg"><div class="fa"><b>Dhia Hammami</b><p>Application Administrator & Developer at EMS Tunisie. Full-stack development, application administration and digital transformation.</p></div>
+<div class="fc"><h4>Navigate</h4><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a></div>
+<div class="fc"><h4>Projects</h4><div id="fpr"></div></div>
+<div class="fc"><h4>Get in touch</h4><a id="fe" href="#">Email</a><a id="fcv" href="Dhia_Hammami_CV.pdf" download>Download CV</a><a id="fli" href="#" hidden>LinkedIn</a><a id="fgh" href="#" hidden>GitHub</a></div></div>
+<div class="fb"><span>© <span id="yr"></span> Dhia Hammami · Tunisia</span><a class="up" href="#top" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a></div>
+<div class="wm rv" aria-hidden="true">Dhia Hammami</div></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+/* ============ EDIT YOUR CONTENT HERE ============ */
+const SITE={email:"Dhyahammami0@gmail.com",linkedin:"",github:"",cv:"Dhia_Hammami_CV.pdf"}; // leave linkedin/github empty to hide the buttons
+
+const JOBS=[
+{when:"Sep 2026 to present",now:true,role:"Application Administrator & Developer",org:"EMS Tunisie, Manouba",pts:["Develop and maintain business and web applications that support internal operations.","Contribute to the digitalization of stock management and administrative workflows.","Work on databases, APIs and application architecture; handle maintenance, troubleshooting and continuous improvement.","Translate requirements from internal departments into technical solutions."],tech:"Node.js, PostgreSQL, REST APIs"},
+{when:"Sep 2025 to Aug 2026",role:"IT Developer",org:"EMS Tunisie, Manouba",pts:["Developed and maintained software applications and web-based business solutions for internal operations.","Worked with databases and APIs, translated business requirements into solutions, and contributed to testing and troubleshooting."]},
+{when:"Jan 2024 to Jun 2024",role:"IT Intern",org:"Regional Library of Gabes",pts:["Developed and maintained the library’s IT systems.","Worked on a Smart Cane for Dynamic Navigation Assistance for the Visually Impaired."]},
+{when:"Jul 2023 to Aug 2023",role:"IT Technician Intern",org:"Baxter International Inc., Tunis",pts:["Developed an inventory management software solution.","Supported embedded systems and helped troubleshoot and optimize IoT devices."]},
+{when:"Jul 2022 to Aug 2022",role:"Software Development Intern",org:"Bestway IT, Tunis",pts:["Gained practical experience in software development and system design."]}
+];
+
+const SKILLS=[
+["Frontend development","React, Next.js, Vue.js, Vite, TypeScript, JavaScript, Tailwind CSS, HTML and CSS"],
+["Backend development","Node.js, Express.js, Django, Laravel, REST APIs, JWT authentication"],
+["Database management","PostgreSQL, MySQL, MongoDB, Prisma, SQL, transactions, relational modeling"],
+["DevOps & deployment","Linux (CentOS), Nginx, PM2, Let’s Encrypt, Docker, Git, GitHub, GitLab. AWS and Bash at a basic level"],
+["Mobile development","Flutter, Dart, React Native"],
+["IT administration","VPS administration, HTTPS, firewalld, SELinux, scheduled backups, hosting several applications on one server"],
+["Project management","Requirements analysis, technical documentation, software testing (ISTQB), organization and project management"],
+["Software architecture","Clean Architecture, MVC, role-based access control, REST API design, workflow engines"]
+];
+
+/* Status kinds: live | wip.  Add a project by copying one block. */
+const P=[
+{id:"stockmaster",title:"StockMaster",sub:"Inventory & production management ERP",status:"Live, in production",kind:"live",cat:"Enterprise ERP",conf:"Internal tool. Only anonymized or mock screens will be shown.",
+ short:"Full-stack ERP for stock, internal requests, purchasing and production planning, deployed on a production VPS.",
+ chips:["React 19","Node.js","PostgreSQL","Prisma"],
+ over:["StockMaster replaces fragmented manual stock operations with one multi-user application that connects warehouse activity, purchasing and production needs in an electronics manufacturing environment.","It has ten user roles with strict visibility rules and works on phones and desktops."],
+ role:"Sole developer and administrator",contrib:"Complete lifecycle: requirements analysis, database architecture, frontend and backend implementation, infrastructure configuration, deployment and hosting.",
+ mods:[["Stock & catalogue",["Product catalogue and categories, including spare parts","Automatic product codes from an atomic counter","Minimum-stock alerts","Stock entries and movement history","Period summaries and CSV export"]],
+ ["Internal requests",["Full approval, partial approval or rejection","Deferred quantities with estimated dates","Preparation, receipt confirmation, closure","Audit logs and permission-based visibility"]],
+ ["Production planning",["Client cards and bills of materials","Weekly plans with shortage detection","What-if simulation","Daily export with automatic packaging deduction"]],
+ ["Purchasing & suppliers",["Purchase requests with management approval","Supplier records","Periodic evaluation, classes A to D"]],
+ ["Dashboards",["Global, warehouse and personal views","30-day movement charts, top requested products, stock alerts","Charts drawn as custom SVG"]],
+ ["Access control",["Ten roles: Administrateur, DG, Logistique, Gestionnaire de Stock, Magasinier, Méthode, Maintenance, Responsable Production, Assistante RH, Chef Parc","Enforced in the interface and in API middleware"]]],
+ stack:[["Frontend","React 19, TypeScript, Vite, Tailwind CSS, React Router, Axios"],["Backend","Node.js 20, Express 5, TypeScript, JWT, bcrypt"],["Database","PostgreSQL 16, Prisma ORM"],["Exports","ExcelJS, html2pdf"],["Infrastructure","CentOS Stream 9 VPS, Nginx reverse proxy, PM2, Let’s Encrypt, SELinux, firewalld, scheduled backups"]],
+ ch:[["Concurrent stock operations","Prisma transactions and guarded updates"],["Duplicate product codes","Atomic database counters"],["Packaging quantity precision","Integer-based conversion ratios"],["Sensitive data exposure","Filtering on the server, not only in the interface"],["Several apps on one VPS","Separate ports, PM2 processes and Nginx server blocks"],["Large catalogues","Debounced server-side search"],["Warehouse mobile use","Responsive layouts and mobile-friendly modals"]]},
+
+{id:"cmms",title:"Maintenance & Calibration CMMS",sub:"Integrated maintenance and quality management",status:"Developed and deployed",kind:"live",cat:"Maintenance & quality",conf:"Internal tool. Equipment data stays private; only mock data will be shown.",
+ short:"Equipment tracking, interventions and calibration monitoring with a live dashboard and automated monthly reports.",
+ chips:["Next.js","Node.js","MySQL","node-cron"],
+ over:["An integrated application that digitizes equipment tracking, maintenance interventions and calibration compliance. It centralizes technical records and monitors deadlines through dashboards and scheduled notifications."],
+ role:"Full-stack developer and server administrator",contrib:"Full-stack development, database implementation, scheduled automation, server administration and production deployment.",
+ mods:[["Equipment management",["Registration and internal identification","Locations and serial numbers"]],["Interventions",["Intervention records","Maintenance history per equipment"]],["Monitoring dashboard",["Up to date","Warning at 8+ months","Critical at 11+ months"]],["Automated notifications",["Monthly job on the first day of each month","SQL joins between equipment and interventions","HTML email report to department heads"]]],
+ stack:[["Frontend","Next.js, React, Tailwind CSS"],["Backend","Node.js, Express.js, REST APIs"],["Database","MySQL with mysql2"],["Automation","node-cron, Nodemailer"],["Infrastructure","CentOS VPS, Nginx, PM2, Let’s Encrypt and Certbot"]],
+ ch:[["Server vs client rendering","Balanced server-rendered pages with client-side dashboard calculations"],["Date integrity","Backend parsing and normalization of dates"],["Production availability","PM2 with automatic restart"],["Secure connectivity","Nginx reverse proxy and HTTPS"]]},
+
+{id:"hr-mobile",title:"HR & Employee Mobile Portal",sub:"Cross-platform app with workflow backend",status:"Developed",kind:"live",cat:"Mobile & HR",conf:"Internal tool handling HR data. No real employee or payslip data will ever be shown.",
+ short:"Flutter app and REST backend for shifts, leave and mission approvals, payslips, notifications and attendance reporting.",
+ chips:["Flutter","BLoC","Node.js","MySQL"],
+ over:["A cross-platform mobile application and backend that digitize HR operations in a manufacturing environment: employee services, shift scheduling, hierarchical approvals, document distribution and attendance reporting."],
+ role:"Mobile and backend developer",contrib:"Mobile application development, backend implementation, database operations, workflow implementation, notifications and deployment.",
+ mods:[["Access control",["Employee, Supervisor, HR, DG and Admin roles","Supervisors see only their direct reports"]],["Approval workflows",["Leave and mission requests","Supervisor validation, then HR","Dynamic routing and request history"]],["Shift management",["Shift library, weekly cycles, assignments","Individual and departmental overrides","Priority rules: single-day exception, then cycle, then default"]],["Payslips",["Batch PDF upload by HR","Matching to employees from file names","Download and viewing on mobile"]],["Notifications",["Firebase Cloud Messaging","Requests, approvals, schedule changes, announcements","Multi-device registration"]],["Reporting",["Daily attendance, missions and leave","Transport-based departure summaries","Theoretical vs actual monthly hours"]],["Engineering practices",["Clean Architecture on mobile, MVC on the backend","Database transactions and duplicate protection","Unified API errors, date and timezone normalization"]]],
+ stack:[["Mobile","Flutter, Dart, BLoC, Dio, flutter_secure_storage, table_calendar"],["Backend","Node.js, Express.js, JWT, bcryptjs, Multer"],["Database","MySQL with mysql2"],["Push","Firebase Cloud Messaging, Firebase Admin SDK"]],ch:[]},
+
+{id:"corporate-website",title:"EMS Corporate Website",sub:"Premium corporate presence for EMS Tunisie",status:"Live",kind:"live",cat:"Corporate web",conf:"Public project.",
+ short:"A modern multilingual corporate site that breaks with the usual cold look of industrial websites.",
+ chips:["Next.js 16","TypeScript","Tailwind","next-intl"],
+ over:["Design, development and deployment of a corporate website for an Electronics Manufacturing Services company, aiming for an immersive and elegant experience instead of a traditional industrial design."],
+ role:"Frontend developer and UI/UX integrator",contrib:"Requirements analysis, visual architecture, frontend development, multilingual implementation, animations, form and upload, performance optimization, deployment and hosting.",
+ mods:[["Interface",["Bento-style asymmetric grids","Dark interface with glass effects","Micro-interactions and hover animations","Responsive layouts"]],["Functionality",["Animated statistics triggered when visible","Spontaneous application form with CV upload and validation","French, English and Italian","Scroll-based animations"]]],
+ stack:[["Framework","Next.js 16, React, TypeScript"],["Styling","Tailwind CSS"],["Animation","Framer Motion, GSAP and ScrollTrigger"],["Internationalization","next-intl"],["Build","Turbopack, next/image"]],ch:[]},
+
+{id:"action-tracker",title:"Action Tracker",sub:"Quality management system (SMQ)",status:"In development",kind:"wip",cat:"Quality management",conf:"Internal tool, work in progress. Mock data only.",
+ short:"Audits, non-conformities, KPIs and corrective actions in one place, with automatic overdue reminders.",
+ chips:["Next.js","Node.js","MySQL","Nodemailer"],
+ over:["A web application that centralizes audits, non-conformities, KPIs and corrective action plans, giving visibility on progress, responsibilities and deadlines.","This project is still being built. Production deployment and final validation are not yet confirmed."],
+ role:"Full-stack developer",contrib:"Requirements analysis, functional design, frontend and backend development, database implementation, workflow automation and testing.",
+ mods:[["Access",["Admin, Director General, Quality Manager, standard user"]],["Audits & non-conformities",["Audit reports linked to departments","Declaration of non-conformities","Supporting documents and evidence"]],["Corrective actions",["Creation, assignment and deadlines","Status: In Progress, Completed, Cancelled"]],["KPIs & reminders",["Quality indicator dashboard","Daily overdue check","HTML email reminders to responsible managers"]]],
+ stack:[["Frontend","Next.js, React, Tailwind CSS, Lucide, Axios"],["Backend","Node.js, Express.js, Multer"],["Database","MySQL with mysql2/promise"],["Security","JWT in cookies"],["Automation","node-cron, Nodemailer"]],ch:[]}
+];
+
+/* ================================================== */
+const $=s=>document.querySelector(s),dot=k=>`<span class="dot ${k==="wip"?"wip":""}"></span>`,ul=a=>`<ul>${a.map(x=>`<li>${x}</li>`).join("")}</ul>`;
+const RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
+$("#yr").textContent=new Date().getFullYear();
+const mt=`mailto:${SITE.email}?subject=${encodeURIComponent("Portfolio contact")}`;
+["#mail","#mail2"].forEach(s=>$(s).href=mt);$("#mail").textContent=SITE.email;$("#cvLink").href=$("#cv2").href=SITE.cv;
+if(SITE.linkedin){$("#li").href=SITE.linkedin;$("#li").hidden=false}if(SITE.github){$("#gh").href=SITE.github;$("#gh").hidden=false}
+let k=0;$("#nm").querySelectorAll(".ln").forEach(l=>{l.innerHTML=[...l.textContent].map(ch=>`<span class="c" aria-hidden="true" style="--i:${k++}">${ch}</span>`).join("")});
+$("#tl").innerHTML=JOBS.map(j=>`<article class="job rv"><div class="when">${j.when}</div><div><h3>${j.role}<span class="tag ${j.now?"":"past"}">${j.now?"Current":"Previous"}</span></h3><p class="org">${j.org}</p>${ul(j.pts)}${j.tech?`<p style="color:var(--mut);font-size:.93rem;margin:12px 0 0">Technologies: ${j.tech}</p>`:""}</div></article>`).join("");
+$("#stack").innerHTML=P.map((p,i)=>`<article class="pc ${i%2?"":"d"}" style="--i:${i}"><div class="l"><span class="badge">${dot(p.kind)}${p.status}</span><h3>${p.title}</h3><p class="sb">${p.sub}</p><p>${p.short}</p></div><div class="r"><dl><dt>My role</dt><dd>${p.role}</dd><dt>Category</dt><dd>${p.cat}</dd><dt>Stack</dt><dd><div class="chips">${p.chips.map(c=>`<span>${c}</span>`).join("")}</div></dd></dl><a class="btn" href="#${p.id}">Open case study</a></div></article>`).join("");
+$("#sk").innerHTML=SKILLS.map(s=>`<div class="rv"><h3>${s[0]}</h3><div class="chips">${s[1].split(/, | and /).map(t=>`<span>${t}</span>`).join("")}</div></div>`).join("");
+function detail(p){const t=r=>`<div class="scroll"><table>${r.map(x=>`<tr><th scope="row">${x[0]}</th><td>${x[1]}</td></tr>`).join("")}</table></div>`;
+return `<div class="wrap"><a class="back" href="#projects">Back to all projects</a><div class="dhead"><span class="badge">${dot(p.kind)}${p.status}</span><h1>${p.title}</h1><p class="lead" style="margin-bottom:14px">${p.sub}</p><div class="meta"><span>Category: ${p.cat}</span><span>My role: ${p.role}</span></div></div>
+<div class="blk"><h2>Overview</h2>${p.over.map(x=>`<p>${x}</p>`).join("")}</div><div class="blk"><h2>What I did</h2><p>${p.contrib}</p></div>
+<div class="blk"><h2>Main functionality</h2><div class="mods">${p.mods.map(m=>`<div><h3>${m[0]}</h3>${ul(m[1])}</div>`).join("")}</div></div>
+<div class="blk"><h2>Technical architecture</h2>${t(p.stack)}</div>${p.ch.length?`<div class="blk"><h2>Challenges and solutions</h2>${t(p.ch)}</div>`:""}
+<div class="blk"><h2>Screenshots and workflow</h2><div class="ph">Anonymized screenshots and a workflow recording will be added here.</div></div>
+<div class="blk"><h2>Confidentiality</h2><p class="note">${p.conf}</p></div><div class="blk"><a class="btn p" href="#contact">Discuss a similar project</a></div></div>`}
+const base=document.title;
+function route(){const id=location.hash.slice(1),p=P.find(x=>x.id===id);$("#home").hidden=!!p;$("#detail").hidden=!p;
+if(p){$("#detail").innerHTML=detail(p);document.title=p.title+" | Dhia Hammami";scrollTo(0,0);window.lenis&&lenis.scrollTo(0,{immediate:true})}else{document.title=base;const e=id&&document.getElementById(id);if(e)e.scrollIntoView()}}
+addEventListener("hashchange",route);route();
+/* motion */
+const bar=$("#bar"),pg=$("#pg"),tick=$("#tick"),tl=$("#tl");
+function onS(){const m=document.documentElement.scrollHeight-innerHeight;pg.style.transform=`scaleX(${m>0?scrollY/m:0})`;const dy=scrollY-(onS.l||0);if(Math.abs(dy)>6){bar.classList.toggle("hid",dy>0&&scrollY>240);onS.l=scrollY}
+if(!RM&&scrollY<innerHeight*1.2)$("#nm").style.transform=`translateY(${scrollY*.16}px)`;if(!RM)tick.style.transform=`translateX(${-scrollY*.4}px)`;const r=tl.getBoundingClientRect();tl.style.setProperty("--p",Math.min(1,Math.max(0,(innerHeight*.7-r.top)/r.height)))}
+addEventListener("scroll",onS,{passive:true});onS();
+const rv=document.querySelectorAll(".rv");
+if("IntersectionObserver"in window&&!RM){const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.12});rv.forEach(n=>io.observe(n));
+const po=new IntersectionObserver(e=>e.forEach(x=>x.target.classList.toggle("on",x.isIntersecting)),{rootMargin:"-40% 0px -40% 0px"});document.querySelectorAll("#proc li").forEach(n=>po.observe(n))}
+else{rv.forEach(n=>n.classList.add("in"));document.querySelectorAll("#proc li").forEach(n=>n.classList.add("on"))}
+/* v4 additions */
+$("#pills").innerHTML=P.map(p=>`<a class="pl" href="#${p.id}">${dot(p.kind)}${p.title}</a>`).join("");
+$("#fpr").innerHTML=P.map(p=>`<a href="#${p.id}">${p.title}</a>`).join("");
+$("#fe").href=mt;$("#fcv").href=SITE.cv;if(SITE.linkedin){$("#fli").href=SITE.linkedin;$("#fli").hidden=false}if(SITE.github){$("#fgh").href=SITE.github;$("#fgh").hidden=false}
+if(!RM){const W=["stock management","equipment maintenance","quality management","HR operations","production planning"],el=$("#cyw");let wi=0,ci=0,dl=false;(function tk(){const w=W[wi];ci+=dl?-1:1;el.textContent=w.slice(0,ci);let d=dl?35:75;if(!dl&&ci===w.length){dl=true;d=1400}else if(dl&&ci===0){dl=false;wi=(wi+1)%W.length;d=350}setTimeout(tk,d)})()}
+const nv=$("#nv"),ind=$("#ind"),links=[...nv.querySelectorAll("a")];
+function setA(a){links.forEach(l=>l.classList.toggle("on",l===a));if(a){ind.style.opacity=1;ind.style.width=a.offsetWidth+"px";ind.style.transform=`translateX(${a.offsetLeft}px)`;a.scrollIntoView({inline:"center",block:"nearest"})}else ind.style.opacity=0}
+if("IntersectionObserver"in window){const so=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)setA(links.find(l=>l.getAttribute("href")==="#"+x.target.id))}),{rootMargin:"-45% 0px -50% 0px"});["about","experience","projects","skills","education"].forEach(i=>so.observe(document.getElementById(i)));
+const ho=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)setA(null)}),{rootMargin:"-45% 0px -50% 0px"});ho.observe($(".hero"))}
+addEventListener("hashchange",()=>{if(P.some(x=>x.id===location.hash.slice(1)))setA(null)});
+/* v5 additions */
+document.querySelectorAll("#sk .chips").forEach(c=>[...c.children].forEach((n,i)=>n.style.setProperty("--k",i)));
+const fine=matchMedia("(hover:hover) and (pointer:fine)").matches;
+if(!RM){
+ if(window.Lenis){window.lenis=new Lenis({duration:1.15,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});const raf=t=>{lenis.raf(t);requestAnimationFrame(raf)};requestAnimationFrame(raf);
+  document.addEventListener("click",e=>{const a=e.target.closest('a[href^="#"]');if(!a||$("#home").hidden)return;const id=a.getAttribute("href").slice(1);if(P.some(p=>p.id===id))return;const el=id==="top"?null:document.getElementById(id);if(id==="top"||el){e.preventDefault();lenis.scrollTo(el||0,{offset:el?-70:0});history.replaceState(null,"","#"+id)}})}
+ if(fine){
+  const g=$("#glow");let tx=innerWidth/2,ty=innerHeight*.3,cx=tx,cy=ty;addEventListener("pointermove",e=>{tx=e.clientX;ty=e.clientY},{passive:true});
+  (function gl(){cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;g.style.setProperty("--gx",cx+"px");g.style.setProperty("--gy",cy+"px");requestAnimationFrame(gl)})();
+  document.querySelectorAll(".btn,.ncta").forEach(b=>{b.addEventListener("pointermove",e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.22}px,${(e.clientY-r.top-r.height/2)*.3}px)`});b.addEventListener("pointerleave",()=>b.style.transform="")});
+  const nw=$(".now");nw.addEventListener("pointermove",e=>{const r=nw.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;nw.style.transform=`perspective(700px) rotateY(${x*12}deg) rotateX(${-y*12}deg) translateY(-4px)`});nw.addEventListener("pointerleave",()=>nw.style.transform="")}
+}
+</script>
+</body>
+</html>
